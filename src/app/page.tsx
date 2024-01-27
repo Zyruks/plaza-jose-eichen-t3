@@ -10,7 +10,6 @@ export default async function Home() {
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#2e026d] to-[#15162c] text-white">
-      <a href="https://error.com"> news</a>
       <div className="container flex flex-col items-center justify-center gap-12 px-4 py-16">
         <h1 className="text-5xl font-extrabold tracking-tight sm:text-[5rem]">
           Create <span className="text-[hsl(280,100%,70%)]">T3</span> App
@@ -35,7 +34,6 @@ export default async function Home() {
             <h3 className="text-2xl font-bold">Documentation →</h3>
             <div className="text-lg">Learn more about Create T3 App, the libraries it uses, and how to deploy it.</div>
           </Link>
-          Bu
         </div>
         <div className="flex flex-col items-center gap-2">
           <p className="text-2xl text-white">{hello ? hello.greeting : 'Loading tRPC query...'}</p>
