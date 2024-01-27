@@ -17,7 +17,6 @@ const config = {
     '^(next/(.*)$)|^(next$)',
     '^(expo(.*)$)|^(expo$)',
     '<THIRD_PARTY_MODULES>',
-    '^@uiguideline/(.*)$',
     '^~/utils/(.*)$',
     '^~/components/(.*)$',
     '^~/styles/(.*)$',

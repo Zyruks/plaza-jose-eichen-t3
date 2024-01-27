@@ -33,11 +33,11 @@ export const useMetaTag = (config: UseMetaTagConfig = {}): UseMetaTagResponse =>
 
       {/* Facebook META Tags */}
       <meta property="og:type" content="website" />
-      <meta property="og:site_name" content="UI Guideline" />
+      <meta property="og:site_name" content="Plaza Jose Eichen" />
       <meta property="og:title" content={defaultConfig.title} />
       <meta property="og:description" content={defaultConfig.description} />
       <meta property="og:image" content={defaultConfig.image} />
-      <meta property="og:url" content={`https://www.uiguideline.com/${defaultConfig.slug}`} />
+      <meta property="og:url" content={`https://www.plaza-jose-eichen.com/${defaultConfig.slug}`} />
       <meta property="og:locale" content="es_la" />
 
       {/* Twitter META Tags */}
@@ -46,18 +46,18 @@ export const useMetaTag = (config: UseMetaTagConfig = {}): UseMetaTagResponse =>
       <meta name="twitter:description" content={defaultConfig.description} />
       <meta name="twitter:image" content={defaultConfig.image} />
       <meta name="twitter:image:src" content={defaultConfig.image} />
-      <meta name="twitter:url" content={`https://www.uiguideline.com/${defaultConfig.slug}`} />
+      <meta name="twitter:url" content={`https://www.plaza-jose-eichen.com/${defaultConfig.slug}`} />
       <meta name="twitter:widgets:csp" content="on" />
       <meta name="twitter:image:alt" content={defaultConfig.description} />
-      <meta name="twitter:site" content="@uiguideline" />
-      <meta name="twitter:creator" content="@uiguideline" />
+      <meta name="twitter:site" content="@plaza-jose-eichen" />
+      <meta name="twitter:creator" content="@plaza-jose-eichen" />
 
       {/* Non-Essential, But Recommended */}
       <meta name="mobile-web-app-capable" content="yes" />
       <meta name="apple-mobile-web-app-capable" content="yes" />
-      <meta name="application-name" content="UI Guideline" />
-      <meta name="apple-mobile-web-app-title" content="UI Guideline" />
-      <meta name="author" content="UI Guideline" />
+      <meta name="application-name" content="Plaza Jose Eichen" />
+      <meta name="apple-mobile-web-app-title" content="Plaza Jose Eichen" />
+      <meta name="author" content="Plaza Jose Eichen" />
     </Head>
   );
   return {

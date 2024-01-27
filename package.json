@@ -5,7 +5,7 @@
   "description": "A comprehensive web platform for Plaza Jose Eichen, offering an interactive directory to easily locate shops and services within the plaza. This site enhances visitor experience by providing detailed information about each business, upcoming events, and plaza amenities.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zyruks/plaza-jose-eichen.git"
+    "url": "git+https://github.com/zyruks/plaza-jose-eichen-t3.git"
   },
   "author": "Samuel Llibre-Pillco (Zyruks)",
   "type": "module",
@@ -20,8 +20,7 @@
     "lint": "next lint",
     "lint:fix": "next lint && sort-package-json",
     "prepare": "npx husky install",
-    "start": "next start",
-    "type-check": "type-check"
+    "start": "next start"
   },
   "dependencies": {
     "@prisma/client": "5.8.1",
