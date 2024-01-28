@@ -142,9 +142,6 @@ devDependencies:
   tailwindcss-animated:
     specifier: ^1.0.1
     version: 1.0.1(tailwindcss@3.4.1)
-  testing-library:
-    specifier: ^0.0.2
-    version: 0.0.2(@angular/common@6.1.10)(@angular/core@6.1.10)
   ts-node:
     specifier: ^10.9.2
     version: 10.9.2(@types/node@18.19.10)(typescript@5.3.3)
@@ -174,28 +171,6 @@ packages:
     dependencies:
       '@jridgewell/gen-mapping': 0.3.3
       '@jridgewell/trace-mapping': 0.3.22
-
-  /@angular/common@6.1.10(@angular/core@6.1.10)(rxjs@6.6.7):
-    resolution: {integrity: sha512-73xxTSYJNKfiJ7C1Ajg+sz5l8y+blb/vNgHYg7O3yem5zLBnfPpidJ1UGg4W4d2Y+jwUVJbZKh8SKJarqAJVUQ==}
-    peerDependencies:
-      '@angular/core': 6.1.10
-      rxjs: ^6.0.0
-    dependencies:
-      '@angular/core': 6.1.10(rxjs@6.6.7)(zone.js@0.8.29)
-      rxjs: 6.6.7
-      tslib: 1.14.1
-    dev: true
-
-  /@angular/core@6.1.10(rxjs@6.6.7)(zone.js@0.8.29):
-    resolution: {integrity: sha512-61l3rIQTVdT45eOf6/fBJIeVmV10mcrxqS4N/1OWkuDT29YSJTZSxGcv8QjAyyutuhcqWWpO6gVRkN07rWmkPg==}
-    peerDependencies:
-      rxjs: ^6.0.0
-      zone.js: ~0.8.26
-    dependencies:
-      rxjs: 6.6.7
-      tslib: 1.14.1
-      zone.js: 0.8.29
-    dev: true
 
   /@babel/code-frame@7.23.5:
     resolution: {integrity: sha512-CgH3s1a96LipHCmSUmYFPwY7MNx8C3avkq7i4Wl3cfa662ldtUe4VM1TPXX70pfmrlWTb6jLqTYrZyT2ZTJBgA==}
@@ -5450,13 +5425,6 @@ packages:
       queue-microtask: 1.2.3
     dev: true
 
-  /rxjs@6.6.7:
-    resolution: {integrity: sha512-hTdwr+7yYNIT5n4AMYp85KA6yw2Va0FLa3Rguvbpa4W3I5xynaBZo41cM3XM+4Q6fRMj3sBYIR1VAmZMXYJvRQ==}
-    engines: {npm: '>=2.0.0'}
-    dependencies:
-      tslib: 1.14.1
-    dev: true
-
   /safe-array-concat@1.1.0:
     resolution: {integrity: sha512-ZdQ0Jeb9Ofti4hbt5lX3T2JcAamT9hfzYU1MNB+z/jaEbB6wfFfPIR/zEORmZqobkCCJhSjodobH6WHNmJ97dg==}
     engines: {node: '>=0.4'}
@@ -5908,17 +5876,6 @@ packages:
       minimatch: 3.1.2
     dev: true
 
-  /testing-library@0.0.2(@angular/common@6.1.10)(@angular/core@6.1.10):
-    resolution: {integrity: sha512-KCbqCCllbgiCXOgmh9MdsgdJ05pmimXGuggtC78pzpxpq/40A3bS+NJoqwCIqZbNnMr6KIZ2mlMZoZCkWVnaWw==}
-    peerDependencies:
-      '@angular/common': ^6.0.0-rc.0 || ^6.0.0
-      '@angular/core': ^6.0.0-rc.0 || ^6.0.0
-    dependencies:
-      '@angular/common': 6.1.10(@angular/core@6.1.10)(rxjs@6.6.7)
-      '@angular/core': 6.1.10(rxjs@6.6.7)(zone.js@0.8.29)
-      tslib: 1.14.1
-    dev: true
-
   /text-extensions@2.4.0:
     resolution: {integrity: sha512-te/NtwBwfiNRLf9Ijqx3T0nlqZiQ2XrrtBvu+cLL8ZRrGkO0NHTug8MYFKyoSrv/sHTaSKfilUkizV6XhxMJ3g==}
     engines: {node: '>=8'}
@@ -6039,10 +5996,6 @@ packages:
       json5: 1.0.2
       minimist: 1.2.8
       strip-bom: 3.0.0
-    dev: true
-
-  /tslib@1.14.1:
-    resolution: {integrity: sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==}
     dev: true
 
   /tslib@2.6.2:
@@ -6401,7 +6354,3 @@ packages:
   /zod@3.22.4:
     resolution: {integrity: sha512-iC+8Io04lddc+mVqQ9AZ7OQ2MrUKGN+oIQyq1vemgt46jwCwLfhq7/pwnBnNXXXZb8VTVLKwp9EDkx+ryxIWmg==}
     dev: false
-
-  /zone.js@0.8.29:
-    resolution: {integrity: sha512-mla2acNCMkWXBD+c+yeUrBUrzOxYMNFdQ6FGfigGGtEVBPJx07BQeJekjt9DmH1FtZek4E9rE1eRR9qQpxACOQ==}
-    dev: true
