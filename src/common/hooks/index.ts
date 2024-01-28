@@ -1,3 +1,3 @@
-export * from './useLockScroll/useLockScroll';
-export * from './useMetaTag/useMetaTag';
-export * from './useMultipleRefs/useMultipleRefs';
+export * from './useLockScroll';
+export * from './useMetaTag';
+export * from './useMultipleRefs';

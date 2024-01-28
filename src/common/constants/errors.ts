@@ -14,4 +14,9 @@ const errors: ErrorMessages = {
   default: 'Unable to sign in.',
 };
 
-export const AuthError = (error = 'default'): string => errors[error]!;
+export const AuthError = (error?: string): string => {
+  if (error && errors.hasOwnProperty(error)) {
+    return errors[error]!;
+  }
+  return errors.default!;
+};
