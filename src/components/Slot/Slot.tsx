@@ -1,3 +1,5 @@
+'use client';
+
 import { Children, cloneElement, forwardRef, isValidElement, type ReactElement, type ReactNode } from 'react';
 import { combinedRef, mergeReactProps } from '~/common';
 
@@ -54,15 +56,14 @@ export const SlotClone = forwardRef<any, SlotCloneProps>((props, forwardedRef) =
       ref: combinedRef([forwardedRef, (children as any).ref]),
     } as any);
   }
-
   return Children.count(children) > 1 ? Children.only(null) : null;
 });
 
-const Slottable = ({ children }: { children: ReactNode }) => {
+export const Slottable = ({ children }: { children: ReactNode }) => {
   return <>{children}</>;
 };
 
-function isSlottable(child: ReactNode): child is ReactElement {
+export function isSlottable(child: ReactNode): child is ReactElement {
   return isValidElement(child) && child.type === Slottable;
 }
 
