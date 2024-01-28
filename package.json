@@ -19,7 +19,7 @@
     "postinstall": "prisma generate",
     "lint": "next lint",
     "lint:fix": "next lint && sort-package-json",
-    "prepare": "npx husky install",
+    "prepare": "husky",
     "start": "next start",
     "test": "jest",
     "test:watch": "jest --watch"
