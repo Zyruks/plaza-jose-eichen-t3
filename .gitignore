@@ -44,6 +44,3 @@ yarn-error.log*
 # yalc
 .yalc
 yalc.lock
-
-# Jest Snapshot directory
-__snapshots__
