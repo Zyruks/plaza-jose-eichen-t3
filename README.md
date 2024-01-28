@@ -1,28 +1,42 @@
-# Create T3 App
+# Plaza Jose Eichen Website Project
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+## Overview
 
-## What's next? How do I make an app with this?
+This repository contains the codebase for the Plaza Jose Eichen website, an interactive and user-friendly platform showcasing a vibrant shopping and community hub in Sosúa, Dominican Republic. Built with the T3 Stack, the website features an intuitive directory for locating shops and services, detailed information on each business, upcoming events, and amenities.
 
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
+## Figma Design
 
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
+Explore our UI/UX design prototypes in Figma: [Plaza Jose Eichen Figma Design](https://www.figma.com/file/sy2hmDX0CVknYrGVV5RoMQ/Plaza-Jose-Eichen?type=design&node-id=0%3A1&mode=design&t=bTl8sEOOG5KzIpIS-1).
 
-- [Next.js](https://nextjs.org)
-- [NextAuth.js](https://next-auth.js.org)
-- [Prisma](https://prisma.io)
-- [Tailwind CSS](https://tailwindcss.com)
-- [tRPC](https://trpc.io)
+## Technology Stack
 
-## Learn More
+- **Frontend:** Next.js (React framework)
+- **Styling:** Tailwind CSS
+- **Database ORM:** Prisma
+- **Backend Querying:** tRPC
 
-To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
+## Database Configuration
 
-- [Documentation](https://create.t3.gg/)
-- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
+- **Local Development:** We use a local database setup for development purposes. This setup is facilitated through Docker.
+- **Production Environment:** In production, we utilize Supabase for our database storage. This provides a scalable, cloud-hosted database solution that ensures robust performance and reliability for the live website.
 
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
+## Setup and Installation
 
-## How do I deploy this?
+To set up and run the project locally:
 
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+1. Clone the repository: `git clone https://github.com/zyruks/plaza-jose-eichen-t3.git`
+2. Install dependencies: `pnpm install`
+3. Ensure Docker is running on your system.
+4. Start the local database: `./start-database.sh`
+5. Apply database migrations: `pnpm db:push`
+6. Start the development server: `pnpm run dev`
+
+After completing these steps, visit `http://localhost:3000` to view the application.
+
+## Contributing
+
+We welcome contributions! Please read our contributing guidelines for information on how to report issues, submit feature requests, and send pull requests.
+
+## License
+
+This project is open source and available under the [MIT](./LICENSE.MD).
