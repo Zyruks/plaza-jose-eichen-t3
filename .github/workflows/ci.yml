@@ -38,5 +38,6 @@ jobs:
           pnpm run build
           pnpm run lint
           pnpm run format
+          pnpm run test
         env:
           SKIP_ENV_VALIDATION: true
