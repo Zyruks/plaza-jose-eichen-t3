@@ -33,10 +33,26 @@ jobs:
       - name: Install Dependencies
         run: pnpm install
 
-      - name: Build, lint, and format
+      - name: Build
         run: |
           pnpm run build
-          pnpm run lint
+        env:
+          SKIP_ENV_VALIDATION: true
+
+      - name: Format
+        run: |
           pnpm run format
+        env:
+          SKIP_ENV_VALIDATION: true
+
+      - name: Lint
+        run: |
+          pnpm run lint
+        env:
+          SKIP_ENV_VALIDATION: true
+
+      - name: Test
+        run: |
+          pnpm run test
         env:
           SKIP_ENV_VALIDATION: true
